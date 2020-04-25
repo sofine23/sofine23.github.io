@@ -6,15 +6,32 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | Hexo</title>
+  <title>准备阶段及本地部署 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="01下载并安装node.js 02 安装Git工具 03搭建本地hexo框架 检查node.js是否安装上 安装cnpm(淘宝的包管理器) 安装hexo框架   04 创建本地blog文件 初始化博客 测试blog hexo clean #用来清理缓存文件 hexo g #生成文件 hexo s #运行本地服务器 hexo d #上传到服务器   给blog更换主题    01下载并安装node">
+<meta property="og:type" content="article">
+<meta property="og:title" content="准备阶段及本地部署">
+<meta property="og:url" content="http://yoursite.com/2020/04/25/%E5%87%86%E5%A4%87%E9%98%B6%E6%AE%B5%E5%8F%8A%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="01下载并安装node.js 02 安装Git工具 03搭建本地hexo框架 检查node.js是否安装上 安装cnpm(淘宝的包管理器) 安装hexo框架   04 创建本地blog文件 初始化博客 测试blog hexo clean #用来清理缓存文件 hexo g #生成文件 hexo s #运行本地服务器 hexo d #上传到服务器   给blog更换主题    01下载并安装node">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://gitee.com/wang_guoping_216/soul_wgp666/raw/master/upload_images/hexo%E9%83%A8%E7%BD%B2%E8%87%B3github/nodejs.png">
+<meta property="og:image" content="https://gitee.com/wang_guoping_216/soul_wgp666/raw/master/upload_images/hexo%E9%83%A8%E7%BD%B2%E8%87%B3github/Git.png">
+<meta property="og:image" content="https://gitee.com/wang_guoping_216/soul_wgp666/raw/master/upload_images/hexo%E9%83%A8%E7%BD%B2%E8%87%B3github/check1.png">
+<meta property="og:image" content="https://gitee.com/wang_guoping_216/soul_wgp666/raw/master/upload_images/hexo%E9%83%A8%E7%BD%B2%E8%87%B3github/cnpm.png">
+<meta property="og:image" content="https://gitee.com/wang_guoping_216/soul_wgp666/raw/master/upload_images/hexo%E9%83%A8%E7%BD%B2%E8%87%B3github/cpnm2.png">
+<meta property="og:image" content="https://gitee.com/wang_guoping_216/soul_wgp666/raw/master/upload_images/hexo%E9%83%A8%E7%BD%B2%E8%87%B3github/hexo-v.png">
+<meta property="og:image" content="https://gitee.com/wang_guoping_216/soul_wgp666/raw/master/upload_images/hexo%E9%83%A8%E7%BD%B2%E8%87%B3github/init1.png">
+<meta property="og:image" content="https://gitee.com/wang_guoping_216/soul_wgp666/raw/master/upload_images/hexo%E9%83%A8%E7%BD%B2%E8%87%B3github/init2.png">
+<meta property="og:image" content="https://gitee.com/wang_guoping_216/soul_wgp666/raw/master/upload_images/hexo%E9%83%A8%E7%BD%B2%E8%87%B3github/blog1.png">
+<meta property="og:image" content="https://gitee.com/wang_guoping_216/soul_wgp666/raw/master/upload_images/hexo%E9%83%A8%E7%BD%B2%E8%87%B3github/blog2.png">
+<meta property="og:image" content="https://gitee.com/wang_guoping_216/soul_wgp666/raw/master/upload_images/hexo%E9%83%A8%E7%BD%B2%E8%87%B3github/blog3.png">
+<meta property="og:image" content="https://gitee.com/wang_guoping_216/soul_wgp666/raw/master/upload_images/hexo%E9%83%A8%E7%BD%B2%E8%87%B3github/blog4.png">
+<meta property="article:published_time" content="2020-04-25T15:45:45.076Z">
+<meta property="article:modified_time" content="2020-04-25T16:00:17.087Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/wang_guoping_216/soul_wgp666/raw/master/upload_images/hexo%E9%83%A8%E7%BD%B2%E8%87%B3github/nodejs.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,103 +167,262 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-准备阶段及本地部署" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      准备阶段及本地部署
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/25/%E5%87%86%E5%A4%87%E9%98%B6%E6%AE%B5%E5%8F%8A%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2/" class="archive-article-date">
+
+        
+        <a href="/2020/04/25/%E5%87%86%E5%A4%87%E9%98%B6%E6%AE%B5%E5%8F%8A%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2/" class="archive-article-date">
   	<time datetime="2020-04-25T15:45:45.076Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-25</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/25/%E5%87%86%E5%A4%87%E9%98%B6%E6%AE%B5%E5%8F%8A%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2/">准备阶段及本地部署</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li><a href="#01%e4%b8%8b%e8%bd%bd%e5%b9%b6%e5%ae%89%e8%a3%85nodejs">01下载并安装node.js</a></li>
+<li><a href="#02-%e5%ae%89%e8%a3%85git%e5%b7%a5%e5%85%b7">02 安装Git工具</a></li>
+<li><a href="#03%e6%90%ad%e5%bb%ba%e6%9c%ac%e5%9c%b0hexo%e6%a1%86%e6%9e%b6">03搭建本地hexo框架</a><ul>
+<li><a href="#%e6%a3%80%e6%9f%a5nodejs%e6%98%af%e5%90%a6%e5%ae%89%e8%a3%85%e4%b8%8a">检查node.js是否安装上</a></li>
+<li><a href="#%e5%ae%89%e8%a3%85cnpm%e6%b7%98%e5%ae%9d%e7%9a%84%e5%8c%85%e7%ae%a1%e7%90%86%e5%99%a8">安装cnpm(淘宝的包管理器)</a></li>
+<li><a href="#%e5%ae%89%e8%a3%85hexo%e6%a1%86%e6%9e%b6">安装hexo框架</a></li>
+</ul>
+</li>
+<li><a href="#04-%e5%88%9b%e5%bb%ba%e6%9c%ac%e5%9c%b0blog%e6%96%87%e4%bb%b6">04 创建本地blog文件</a><ul>
+<li><a href="#%e5%88%9d%e5%a7%8b%e5%8c%96%e5%8d%9a%e5%ae%a2">初始化博客</a></li>
+<li><a href="#%e6%b5%8b%e8%af%95blog">测试blog</a><ul>
+<li><a href="#hexo-clean-%e7%94%a8%e6%9d%a5%e6%b8%85%e7%90%86%e7%bc%93%e5%ad%98%e6%96%87%e4%bb%b6">hexo clean #用来清理缓存文件</a></li>
+<li><a href="#hexo-g-%e7%94%9f%e6%88%90%e6%96%87%e4%bb%b6">hexo g #生成文件</a></li>
+<li><a href="#hexo-s-%e8%bf%90%e8%a1%8c%e6%9c%ac%e5%9c%b0%e6%9c%8d%e5%8a%a1%e5%99%a8">hexo s #运行本地服务器</a></li>
+<li><a href="#hexo-d-%e4%b8%8a%e4%bc%a0%e5%88%b0%e6%9c%8d%e5%8a%a1%e5%99%a8">hexo d #上传到服务器</a></li>
+</ul>
+</li>
+<li><a href="#%e7%bb%99blog%e6%9b%b4%e6%8d%a2%e4%b8%bb%e9%a2%98">给blog更换主题</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="01下载并安装node-js"><a href="#01下载并安装node-js" class="headerlink" title="01下载并安装node.js"></a>01下载并安装node.js</h1><p>打开<a href="https://nodejs.org/" target="_blank" rel="noopener">官方网站</a><br> <a href="https://nodejs.org/" target="_blank" rel="noopener">https://nodejs.org/</a></p>
+<p> <img src="https://gitee.com/wang_guoping_216/soul_wgp666/raw/master/upload_images/hexo%E9%83%A8%E7%BD%B2%E8%87%B3github/nodejs.png" alt="nodejs"></p>
+<p> 接下来打开程序一步步的next就行了</p>
+<blockquote>
+<p>安装过程可能会出现一个错误（出现error 2502 和error2503）参见<a href="http://note.youdao.com/noteshare?id=758349d89930ddeece33a1252b6ed74b" target="_blank" rel="noopener">修改方法</a></p>
+</blockquote>
+<hr>
+<h1 id="02-安装Git工具"><a href="#02-安装Git工具" class="headerlink" title="02 安装Git工具"></a>02 安装Git工具</h1><p><a href="https://git-scm.com/downloads" target="_blank" rel="noopener">官网</a>  【打不开  <a href="https://git-scm.com/downloads" target="_blank" rel="noopener">https://git-scm.com/downloads</a> 】</p>
+<p> 博主是windows电脑，所以选择windows版本</p>
+<p><img src="https://gitee.com/wang_guoping_216/soul_wgp666/raw/master/upload_images/hexo%E9%83%A8%E7%BD%B2%E8%87%B3github/Git.png" alt="git"></p>
+<p>他的安装依旧是点击下一步就行</p>
+<blockquote>
+<p>这个Git Bash相当于一个终端命令行，类似于cmd（后面简称Git终端）</p>
+</blockquote>
+<hr>
+<h1 id="03搭建本地hexo框架"><a href="#03搭建本地hexo框架" class="headerlink" title="03搭建本地hexo框架"></a>03搭建本地hexo框架</h1><h2 id="检查node-js是否安装上"><a href="#检查node-js是否安装上" class="headerlink" title="检查node.js是否安装上"></a>检查node.js是否安装上</h2><p>在任何位置右键，点击【Git Bash Here】</p>
+<ul>
+<li><p>node -v    #查看node版本</p>
+</li>
+<li><p>npm -v    #查看npm版本</p>
+</li>
+</ul>
+<blockquote>
+<p>注：npm 就是包管理器的意思</p>
+</blockquote>
+<p>  如图<img src="https://gitee.com/wang_guoping_216/soul_wgp666/raw/master/upload_images/hexo%E9%83%A8%E7%BD%B2%E8%87%B3github/check1.png" alt="check1"></p>
+<h2 id="安装cnpm-淘宝的包管理器"><a href="#安装cnpm-淘宝的包管理器" class="headerlink" title="安装cnpm(淘宝的包管理器)"></a>安装cnpm(淘宝的包管理器)</h2><p>在Git终端上输入</p>
+<blockquote>
+<p>npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a></p>
+</blockquote>
+<blockquote>
+<p>注：-g 代表全局安装</p>
+</blockquote>
+<p>出现如下界面代表安装成功<br><img src="https://gitee.com/wang_guoping_216/soul_wgp666/raw/master/upload_images/hexo%E9%83%A8%E7%BD%B2%E8%87%B3github/cnpm.png" alt="cnpm"></p>
+<p>查看cnpm是否安装成功</p>
+<ul>
+<li>cnpm -v    #查看cnpm版本<br><img src="https://gitee.com/wang_guoping_216/soul_wgp666/raw/master/upload_images/hexo%E9%83%A8%E7%BD%B2%E8%87%B3github/cpnm2.png" alt="cnpm2"></li>
+</ul>
+<h2 id="安装hexo框架"><a href="#安装hexo框架" class="headerlink" title="安装hexo框架"></a>安装hexo框架</h2><p>在Git终端输入</p>
+<blockquote>
+<p>cnpm install -g hexo-cli</p>
+</blockquote>
+<p>安装hexo框架</p>
+<p>在Git终端输入</p>
+<ul>
+<li>hexo -v    #查看hexo版本</li>
+</ul>
+<p><img src="https://gitee.com/wang_guoping_216/soul_wgp666/raw/master/upload_images/hexo%E9%83%A8%E7%BD%B2%E8%87%B3github/hexo-v.png" alt="hexo-v"></p>
+<hr>
+<h1 id="04-创建本地blog文件"><a href="#04-创建本地blog文件" class="headerlink" title="04 创建本地blog文件"></a>04 创建本地blog文件</h1><h2 id="初始化博客"><a href="#初始化博客" class="headerlink" title="初始化博客"></a>初始化博客</h2><ol>
+<li>在你认为合适的位置创建一个文件夹（存放以后的blog文件）</li>
+<li>进入新建的文件夹之后，右键，点击【Git Bash Here】 进入命令行终端</li>
+<li>sudo hexo init  #初始化博客<blockquote>
+<p>注：sudo相当于windows下的以管理员打开cmd（如果本身就是以管理员打开cmd，可以去掉sudo）</p>
+</blockquote>
+</li>
+</ol>
+<p>初始化成功界面<br><img src="https://gitee.com/wang_guoping_216/soul_wgp666/raw/master/upload_images/hexo%E9%83%A8%E7%BD%B2%E8%87%B3github/init1.png" alt="init1"></p>
+<p>初始化成功之后的文件夹,会出来这么多文件<br><img src="https://gitee.com/wang_guoping_216/soul_wgp666/raw/master/upload_images/hexo%E9%83%A8%E7%BD%B2%E8%87%B3github/init2.png" alt="init2"></p>
+<h2 id="测试blog"><a href="#测试blog" class="headerlink" title="测试blog"></a>测试blog</h2><p>常用命令,hexo框架一般都是这4步走</p>
+<ol>
+<li>hexo clean #用来清理缓存文件</li>
+<li>hexo g      #生成文件</li>
+<li>hexo s     #运行本地服务器</li>
+<li>hexo d   #上传到服务器</li>
+</ol>
+<h3 id="hexo-clean-用来清理缓存文件"><a href="#hexo-clean-用来清理缓存文件" class="headerlink" title="hexo clean #用来清理缓存文件"></a>hexo clean #用来清理缓存文件</h3><p><img src="https://gitee.com/wang_guoping_216/soul_wgp666/raw/master/upload_images/hexo%E9%83%A8%E7%BD%B2%E8%87%B3github/blog1.png" alt="blog1"></p>
+<h3 id="hexo-g-生成文件"><a href="#hexo-g-生成文件" class="headerlink" title="hexo g #生成文件"></a>hexo g #生成文件</h3><p><img src="https://gitee.com/wang_guoping_216/soul_wgp666/raw/master/upload_images/hexo%E9%83%A8%E7%BD%B2%E8%87%B3github/blog2.png" alt="blog2"></p>
+<h3 id="hexo-s-运行本地服务器"><a href="#hexo-s-运行本地服务器" class="headerlink" title="hexo s #运行本地服务器"></a>hexo s #运行本地服务器</h3><p><img src="https://gitee.com/wang_guoping_216/soul_wgp666/raw/master/upload_images/hexo%E9%83%A8%E7%BD%B2%E8%87%B3github/blog3.png" alt="blog3"></p>
+<blockquote>
+<p>此时在浏览器输入【localhost:4000】,出现如下页面</p>
+</blockquote>
+<p><img src="https://gitee.com/wang_guoping_216/soul_wgp666/raw/master/upload_images/hexo%E9%83%A8%E7%BD%B2%E8%87%B3github/blog4.png" alt="blog4"></p>
+<blockquote>
+<p>在终端中ctrl+C可结束blog与浏览器localhost:4000的链接</p>
+</blockquote>
+<h3 id="hexo-d-上传到服务器"><a href="#hexo-d-上传到服务器" class="headerlink" title="hexo d #上传到服务器"></a>hexo d #上传到服务器</h3><p>接下来就是推送到各个代码托管平台实现部署</p>
+<ol>
+<li><a href="">github</a></li>
+<li><a href="">coding</a></li>
+<li><a href="">gitee</a></li>
+</ol>
+<h2 id="给blog更换主题"><a href="#给blog更换主题" class="headerlink" title="给blog更换主题"></a>给blog更换主题</h2><p><strong>未完待续…………</strong></p>
+<hr>
+<p>日期：2020-04-26凌晨</p>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/04/25/%E5%87%86%E5%A4%87%E9%98%B6%E6%AE%B5%E5%8F%8A%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/25/%E5%88%A9%E7%94%A8hexo%E6%A1%86%E6%9E%B6%E9%83%A8%E7%BD%B2%E4%B8%AA%E4%BA%BAblog/" class="archive-article-date">
-  	<time datetime="2020-04-25T15:45:45.073Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-25</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2020/04/25/%E5%88%A9%E7%94%A8hexo%E6%A1%86%E6%9E%B6%E9%83%A8%E7%BD%B2%E4%B8%AA%E4%BA%BAblog/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">利用hexo框架部署个人blog</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/25/%E5%88%A9%E7%94%A8hexo%E6%A1%86%E6%9E%B6%E9%83%A8%E7%BD%B2%E4%B8%AA%E4%BA%BAblog/">利用hexo框架部署个人blog</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/25/hello-world/" class="archive-article-date">
-  	<time datetime="2020-04-25T08:45:25.646Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-25</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/25/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
 
 
           </div>
@@ -269,8 +445,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
