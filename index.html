@@ -5,18 +5,18 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>wgp的博客</title>
+  <link rel="dns-prefetch" href="https://sofine23.github.io">
+  <title>wgp</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
-<meta property="og:title" content="wgp的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="wgp的博客">
+<meta property="og:title" content="wgp">
+<meta property="og:url" content="https://sofine23.github.io/index.html">
+<meta property="og:site_name" content="wgp">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="wgp">
 <meta name="twitter:card" content="summary">
   
-    <link rel="alternative" href="/atom.xml" title="wgp的博客" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="wgp" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -155,6 +155,115 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-hexo框架部署至github" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/26/hexo%E6%A1%86%E6%9E%B6%E9%83%A8%E7%BD%B2%E8%87%B3github/">hexo框架部署至github</a>
+    </h1>
+  
+
+        
+        <a href="/2020/04/26/hexo%E6%A1%86%E6%9E%B6%E9%83%A8%E7%BD%B2%E8%87%B3github/" class="archive-article-date">
+  	<time datetime="2020-04-26T01:36:50.782Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-26</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>操作均在你的新建文件夹目录下完成</p>
+</blockquote>
+<p>打开Git终端（右键选择Git Here）</p>
+<ol>
+<li><p>输入pwd命令，查看当前文件夹是否在你的博客<strong>根目录</strong>下，如图<br><img src="https://gitee.com/wang_guoping_216/soul_wgp666/raw/master/upload_images/hexo%E9%83%A8%E7%BD%B2%E8%87%B3github%EF%BC%88%E6%9C%80%E6%96%B0%EF%BC%89/pwd.png" alt="pwd"></p>
+<p>不是就进入博客根目录</p>
+</li>
+<li><p>hexo clean #清理</p>
+</li>
+<li><p>hexo g #生成</p>
+<h3 id="在github上创建仓库"><a href="#在github上创建仓库" class="headerlink" title="在github上创建仓库"></a>在github上创建仓库</h3><ol>
+<li>如图所示，点击【new repository】创建新仓库<br><img src="https://gitee.com/wang_guoping_216/soul_wgp666/raw/master/upload_images/hexo%E9%83%A8%E7%BD%B2%E8%87%B3github%EF%BC%88%E6%9C%80%E6%96%B0%EF%BC%89/github1.png" alt="github1"></li>
+<li>仓库名称必须是第一个红框里面的内容（我的是sofine23）+.github.io<br>例如我的userName是sofine23,那么仓库名则为sofine23.github.io<br><img src="https://gitee.com/wang_guoping_216/soul_wgp666/raw/master/upload_images/hexo%E9%83%A8%E7%BD%B2%E8%87%B3github%EF%BC%88%E6%9C%80%E6%96%B0%EF%BC%89/github2.png" alt="github2"><br>然后点击 Create Repository</li>
+<li>成功之后会生成一个这样的地址（到时候会用）<br><a href="https://github.com/sofine23/sofine23.github.io" target="_blank" rel="noopener">https://github.com/sofine23/sofine23.github.io</a></li>
+</ol>
+</li>
+<li><p>cnpm install –save hexo-deployer-git #在blog目录下安装git部署插件</p>
+</li>
+<li><p>配置根目录下的【_config.yml】文件，用vim，submit，或者notepad++打开都行<br>需要更改deploy属性为</p>
+<blockquote>
+<p>deploy:</p>
+<pre><code> type: git
+repo: https://github.com/YourGithubName/YourGithubName.github.io.git
+ branch: master</code></pre><p>更改为如图所示，记得冒号后面一定要加空格<br><img src="https://gitee.com/wang_guoping_216/soul_wgp666/raw/master/upload_images/hexo%E9%83%A8%E7%BD%B2%E8%87%B3github%EF%BC%88%E6%9C%80%E6%96%B0%EF%BC%89/config1.png" alt="config1"><br>然后保存退出</p>
+</blockquote>
+</li>
+<li><p>hexo d    #部署到Github仓库里</p>
+</li>
+</ol>
+<blockquote>
+<p>中间可能出现一个错误为 not Found git<br>这是需要给git配置身份</p>
+</blockquote>
+<ul>
+<li>在Git终端输入git config –global user.name “sofine23”,把sofine23改为你的用户名</li>
+<li>输入git config –global user.email “你的电子邮件（绑定github的）”</li>
+</ul>
+<p>如果出现错误，需重新hexo d 即可，推送成功如图<br><img src="https://gitee.com/wang_guoping_216/soul_wgp666/raw/master/upload_images/hexo%E9%83%A8%E7%BD%B2%E8%87%B3github%EF%BC%88%E6%9C%80%E6%96%B0%EF%BC%89/d.png" alt="d"></p>
+<blockquote>
+<p>一定要记得hexo三步走</p>
+</blockquote>
+<ul>
+<li>hexo clean</li>
+<li>hexo g</li>
+<li>hexo d</li>
+</ul>
+<p>中间出现问题执行这三步即可<br>7. 推送成功之后找到自己的仓库<br>   <img src="https://gitee.com/wang_guoping_216/soul_wgp666/raw/master/upload_images/hexo%E9%83%A8%E7%BD%B2%E8%87%B3github%EF%BC%88%E6%9C%80%E6%96%B0%EF%BC%89/find.png" alt="find"><br>   会看到自己本地博客的文件已经推送到github仓库上了<br>   <img src="https://gitee.com/wang_guoping_216/soul_wgp666/raw/master/upload_images/hexo%E9%83%A8%E7%BD%B2%E8%87%B3github%EF%BC%88%E6%9C%80%E6%96%B0%EF%BC%89/find2.png" alt="find2"><br>然后在浏览器新标签页输入<br>sofine23.github.io按回车即可（记得把sofine23替换为你的用户名）<br>浏览器会出现你之前localhost:4000的界面，即为部署成功</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/04/26/hexo%E6%A1%86%E6%9E%B6%E9%83%A8%E7%BD%B2%E8%87%B3github/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-准备阶段及本地部署" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -345,7 +454,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="利用hexo框架部署个人blog"><a href="#利用hexo框架部署个人blog" class="headerlink" title="利用hexo框架部署个人blog"></a>利用hexo框架部署个人blog</h1><h2 id="准备阶段及本地部署"><a href="#准备阶段及本地部署" class="headerlink" title="准备阶段及本地部署"></a><a href="https://sofine23.github.io/2020/04/25/%E5%87%86%E5%A4%87%E9%98%B6%E6%AE%B5%E5%8F%8A%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2/" target="_blank" rel="noopener">准备阶段及本地部署</a></h2><h2 id="多平台部署测试"><a href="#多平台部署测试" class="headerlink" title="多平台部署测试"></a>多平台部署测试</h2><ol>
+        <h1 id="利用hexo框架部署个人blog"><a href="#利用hexo框架部署个人blog" class="headerlink" title="利用hexo框架部署个人blog"></a>利用hexo框架部署个人blog</h1><h2 id="准备阶段及本地部署"><a href="#准备阶段及本地部署" class="headerlink" title="准备阶段及本地部署"></a><a href="https://sofine23.github.io/2020/04/25/%E5%87%86%E5%A4%87%E9%98%B6%E6%AE%B5%E5%8F%8A%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2/">准备阶段及本地部署</a></h2><h2 id="多平台部署测试"><a href="#多平台部署测试" class="headerlink" title="多平台部署测试"></a>多平台部署测试</h2><ol>
 <li><a href="">github</a></li>
 <li><a href="">coding</a></li>
 <li><a href="">gitee</a></li>
